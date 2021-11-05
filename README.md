@@ -1,8 +1,11 @@
 # voxelSliceViz
-Super simple GUI to visualize voxel slices.
-
+Super simple GUI to visualize voxel slices as 2D images.
 ### Purpose
-Visualize voxels by iterating through their first dimension and looking at the 2D image corresponding to that dimension. 
+Visualize voxels with just one line by iterating through their z dimension and looking at the 2D image corresponding to that z index.  \
+I made this to help me while developing segmentation models on medical image volumes.
+### Usage
+* Create a virtual environment and get dependencies using `pip install requirements.txt`
+* Import SliceObserverGUI class in your script: `from SliceObserverGUI import SliceObserverGUI`
+* Call the GUI class on your voxel: `SliceObserverGUI(voxel)`
 
-### Use 
-See the demo in the SOGUI_Demo.py for usage. 
+See the demo in the SOGUI_Demo.py for example usage. 
